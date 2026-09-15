@@ -3,10 +3,10 @@ import { Link, useLocation } from 'wouter';
 import { Bell, CalendarDays, ChevronRight, Command, LayoutDashboard, Menu, Search, UserRound, UsersRound, X } from 'lucide-react';
 
 const navigation = [
-  { href: '/', label: 'Overview', icon: LayoutDashboard },
-  { href: '/patients', label: 'Patient registry', icon: UsersRound },
-  { href: '/dialysis', label: 'Dialysis schedule', icon: CalendarDays },
-  { href: '/alerts', label: 'Clinical alerts', icon: Bell },
+  { href: '/', label: 'Trang chủ', icon: LayoutDashboard },
+  { href: '/patients', label: 'Đăng ký bệnh nhân', icon: UsersRound },
+  { href: '/dialysis', label: 'Lịch lọc máu', icon: CalendarDays },
+  { href: '/alerts', label: 'Cảnh báo lâm sàng', icon: Bell },
 ];
 
 function NavContent({ location, onNavigate }: { location: string; onNavigate?: () => void }) {
@@ -18,7 +18,7 @@ function NavContent({ location, onNavigate }: { location: string; onNavigate?: (
         </div>
         <div>
           <div className="text-[15px] font-extrabold tracking-tight text-[hsl(var(--sidebar-foreground))]">RenalCare</div>
-          <div className="eyebrow !text-[hsl(var(--sidebar-foreground)/.48)]">Clinical workspace</div>
+          <div className="eyebrow !text-[hsl(var(--sidebar-foreground)/.48)]">Hệ thống quản lý bệnh nhân CKD</div>
         </div>
       </div>
       <div className="mb-3 px-3 text-[10px] font-semibold uppercase tracking-[.18em] text-[hsl(var(--sidebar-foreground)/.4)]">Workspace</div>
@@ -46,10 +46,10 @@ function NavContent({ location, onNavigate }: { location: string; onNavigate?: (
       </nav>
       <div className="mt-auto rounded-xl border border-[hsl(var(--sidebar-border))] bg-[hsl(var(--sidebar-foreground)/.045)] p-3.5">
         <div className="mb-2 flex items-center justify-between">
-          <span className="eyebrow !text-[hsl(var(--sidebar-foreground)/.45)]">On call</span>
+          <span className="eyebrow !text-[hsl(var(--sidebar-foreground)/.45)]">Online</span>
           <span className="h-2 w-2 rounded-full bg-[hsl(155_55%_54%)] shadow-[0_0_0_4px_hsl(155_55%_54%/.1)]" />
         </div>
-        <p className="text-sm font-semibold text-[hsl(var(--sidebar-foreground)/.88)]">Dr. Mira Sen</p>
+        <p className="text-sm font-semibold text-[hsl(var(--sidebar-foreground)/.88)]">Bác sĩ Nguyễn Văn A</p>
         <p className="mt-0.5 text-xs text-[hsl(var(--sidebar-foreground)/.48)]">Nephrology · until 19:00</p>
       </div>
     </>
