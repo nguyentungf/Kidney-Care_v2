@@ -7,6 +7,7 @@
 ---
 
 ## 📑 MỤC LỤC TỔNG QUAN
+
 1. [Hướng dẫn sử dụng chi tiết (User Guide: Local & Cloud)](#1-hướng-dẫn-sử-dụng-chi-tiết-user-guide)
 2. [ALERT ĐẶC BIỆT: Nguyên tắc bảo trì & Vận hành hệ thống](#2-alert-đặc-biệt-nguyên-tắc-bảo-trì-hệ-thống)
 3. [Bản đồ phân vùng chi tiết: File/Folder Được sửa vs Cấm sửa](#3-bản-đồ-phân-vùng-chi-tiết-filefolder-được-sửa-vs-cấm-sửa)
