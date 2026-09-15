@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: renalcare-app
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - SQLITE_PATH=/app/data/renalcare.sqlite
+    volumes:
+      - app-data:/app/data
+
+volumes:
+  app-data:
+

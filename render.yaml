@@ -1,0 +1,21 @@
+# ═══════════════════════════════════════════════════════════════
+# Render Blueprint – 100% Free Web Service
+# RenalCare Patient Management System
+# ═══════════════════════════════════════════════════════════════
+
+services:
+  - type: web
+    name: renalcare-system
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm --prefix frontend install && npm --prefix frontend run build && npm --prefix backend install
+    startCommand: npm --prefix backend start
+    healthCheckPath: /api/healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: NODE_ENV
+        value: production
+      - key: SQLITE_PATH
+        value: ./database/renalcare.sqlite
