@@ -4,7 +4,7 @@ import { Bell, CalendarDays, ChevronRight, Command, LayoutDashboard, Menu, Searc
 
 const navigation = [
   { href: '/', label: 'Trang chủ', icon: LayoutDashboard },
-  { href: '/patients', label: 'Đăng ký bệnh nhân', icon: UsersRound },
+  { href: '/patients', label: 'Danh sách bệnh nhân', icon: UsersRound },
   { href: '/dialysis', label: 'Lịch lọc máu', icon: CalendarDays },
   { href: '/alerts', label: 'Cảnh báo lâm sàng', icon: Bell },
 ];
@@ -50,7 +50,7 @@ function NavContent({ location, onNavigate }: { location: string; onNavigate?: (
           <span className="h-2 w-2 rounded-full bg-[hsl(155_55%_54%)] shadow-[0_0_0_4px_hsl(155_55%_54%/.1)]" />
         </div>
         <p className="text-sm font-semibold text-[hsl(var(--sidebar-foreground)/.88)]">Bác sĩ Nguyễn Văn A</p>
-        <p className="mt-0.5 text-xs text-[hsl(var(--sidebar-foreground)/.48)]">Nephrology · until 19:00</p>
+        <p className="mt-0.5 text-xs text-[hsl(var(--sidebar-foreground)/.48)]">Khoa thận · until 19:00</p>
       </div>
     </>
   );
@@ -93,10 +93,10 @@ export function AppShell({ children }: { children: ReactNode }) {
             </Link>
             <div className="hidden h-7 w-px bg-border sm:block" />
             <div className="flex items-center gap-2.5">
-              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">MS</div>
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-xs font-bold text-primary-foreground">NA</div>
               <div className="hidden text-left sm:block">
-                <p className="text-xs font-bold leading-tight">Mira Sen, MD</p>
-                <p className="text-[11px] text-muted-foreground">Nephrology</p>
+                <p className="text-xs font-bold leading-tight">Nguyễn Văn A</p>
+                <p className="text-[11px] text-muted-foreground">Khoa thận</p>
               </div>
             </div>
           </div>
