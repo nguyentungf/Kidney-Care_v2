@@ -17,10 +17,10 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@workspace/api-client-react": ["src/api-client/index.ts"]
+      "@/*": ["./src/*"],
+      "@workspace/api-client-react": ["./src/api-client/index.ts"],
+      "@workspace/api-client-react/*": ["./src/api-client/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src/**/*"]
 }
-
